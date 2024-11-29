@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="QuoteGenerator.Maui.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Grid x:Name="gridBackground">
+
+        <Grid Margin="25" RowDefinitions=".8*, .2*">
+            <Label
+                x:Name="labelQuote"
+                FontFamily="Bison"
+                FontSize="30"
+                HorizontalTextAlignment="Center"
+                Text="They don't make bugs like bunny anymore. - Olav Mjelde"
+                TextColor="White"
+                VerticalOptions="Center" />
+            <Button
+                x:Name="buttonGenerateQuote"
+                Grid.Row="1"
+                BackgroundColor="Black"
+                Clicked="buttonGenerateQuote_Clicked"
+                Opacity=".4"
+                Text="Get new quote"
+                TextColor="White" />
+        </Grid>
+    </Grid>
+</ContentPage>
